@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/grey"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/vedio_Thum"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/vedio_thum"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:background="@color/liteWhite"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/chanel_image"
+            android:src="@drawable/chanel"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:background="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp">
+            <TextView
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tittle"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:id="@+id/vedio_tittle"/>
+            <TextView
+                android:textColor="@color/liteWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="chanel_name"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:id="@+id/channel_name"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

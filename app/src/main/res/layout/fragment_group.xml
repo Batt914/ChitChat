@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeFragment">
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="10dp"
+        android:gravity="center_vertical"
+        android:baselineAligned="false">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add Frednds..."
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:textColor="@color/chitchat"
+            android:fontFamily="sans-serif" />
+
+        <ImageView
+            android:id="@+id/moreIcon"
+            android:layout_width="39dp"
+            android:tint="@color/IconColor"
+            android:layout_height="30dp"
+            android:src="@drawable/more"
+            tools:ignore="UseAppTint" />
+
+
+    </LinearLayout>
+
+    <SearchView
+
+        style="@style/SearchViewTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/lavender_boder"
+        android:iconifiedByDefault="false"
+        android:queryHint="search hear..." />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Group_Recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

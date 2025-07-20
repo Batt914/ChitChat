@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ChitChat" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+
+    </style>
+
+    <style name="Theme.ChitChat" parent="Base.Theme.ChitChat" />
+    <color name="IconColor">#000000</color>
+    <color name="background">#ffffff</color>
+    <color name="Navigatiopbackground">#ffffff</color>
+    <color name="reciverChat">@color/color_sendre</color>
+    <color name="chitchat" tools:ignore="MissingDefaultResource">@color/color_sendre</color>
+
+    <color name="cardBacground">@color/liteWhite</color>
+
+    <color name="rsciver">@color/color_sendre</color>
+
+    <color name="menuBackgroun">@color/color_sendre</color>
+    <color name="menuIcon">@color/white</color>
+    <color name="homebackground" tools:ignore="MissingDefaultResource">#EDEDEB</color>
+
+    <drawable name="wallpaper">@drawable/light_mood</drawable>
+
+</resources>

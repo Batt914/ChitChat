@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ChitChat" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+    <color name="IconColor">#FFFFFF</color>
+    <color name="background">#161616</color>
+    <color name="Navigatiopbackground">#000000</color>
+    <color name="reciverChat">@color/color_reciver</color>
+    <color name="chitchat" tools:ignore="MissingDefaultResource">#F2F1F1</color>
+
+
+    <color name="DC_Text" tools:ignore="MissingDefaultResource">#000000</color>
+    <color name="DC_Curd" tools:ignore="MissingDefaultResource">#ffffff</color>
+    <color name="DC_Icon" tools:ignore="MissingDefaultResource">@color/color_sendre</color>
+
+    <color name="menuBackgroun">@color/white</color>
+    <color name="menuIcon">@color/color_sendre</color>
+
+    <color name="cardBacground">@color/grey</color>
+    <color name="rsciver">@color/color_reciver</color>
+
+    <color name="homebackground" tools:ignore="MissingDefaultResource">#101010</color>
+
+    <drawable name="wallpaper">@drawable/night_mood1</drawable>
+</resources>

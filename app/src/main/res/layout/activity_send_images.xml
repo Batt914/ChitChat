@@ -1,0 +1,79 @@
+<RelativeLayout
+    android:id="@+id/sendImagesChat"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="32.50dp"
+            android:layout_height="32.50dp"
+            android:id="@+id/sender_profile112"
+            android:src="@drawable/profile11"
+            android:scaleType="centerCrop"
+            app:shapeAppearance="@style/roundedImageView"
+            app:shapeAppearanceOverlay="@style/roundedImageView"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="13dp"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/images"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            tools:targetApi="34">
+            <ImageView
+                android:id="@+id/SenderchatImages"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@drawable/nene"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/color_sendre"
+                android:layout_marginRight="230dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textColor="@color/color_sendre"
+                android:layout_marginRight="223dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="25"
+                android:layoutDirection="ltr"
+                android:textStyle="bold"
+                android:textColor="@color/color_sendre"
+                android:textSize="15dp"
+                android:textDirection="ltr"
+                android:layout_marginRight="206dp"
+                android:layout_marginTop="5dp"/>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

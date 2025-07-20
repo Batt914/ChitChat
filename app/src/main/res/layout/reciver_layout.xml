@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="32.50dp"
+            android:layout_height="32.50dp"
+            android:src="@drawable/profile11"
+            android:id="@+id/reciver_img"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/roundedImageView"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="5dp"/>
+            <androidx.cardview.widget.CardView
+                android:backgroundTint="@color/reciverChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                app:cardCornerRadius="25dp"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:id="@+id/recivermsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Online_vikky "
+                    android:textStyle="normal"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"/>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

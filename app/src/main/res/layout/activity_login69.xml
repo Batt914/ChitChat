@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".SingUp">
+
+    <LinearLayout
+        android:id="@+id/icon"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/chat" />
+        <TextView
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-------  Login with ur details  -------"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon"
+        android:text="A user logs in by entering their registered email and password into the login form. The system verifies the credentials against stored records. "
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+
+        android:fitsSystemWindows="true"
+        android:id="@+id/sin"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical">
+        <!--        <com.google.android.material.imageview.ShapeableImageView-->
+        <!--            android:id="@+id/re_image"-->
+        <!--            android:layout_marginBottom="20dp"-->
+        <!--            android:layout_width="80dp"-->
+        <!--            android:layout_height="80dp"-->
+        <!--            android:src="@drawable/profile"-->
+        <!--            android:scaleType="centerCrop"-->
+        <!--            app:shapeAppearanceOverlay="@style/roundedImageView"/>-->
+        <LinearLayout
+            android:id="@+id/emailPass"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                app:endIconMode="clear_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cursorColor="@color/color_sendre"
+                app:hintTextColor="@color/color_sendre"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/color_sendre"
+                android:layout_marginBottom="5dp"
+                app:startIconDrawable="@drawable/email"
+                android:hint="email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailLogin"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/color_sendre"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                app:cursorColor="@color/color_sendre"
+                app:startIconDrawable="@drawable/pass"
+                app:endIconMode="password_toggle"
+                app:hintTextColor="@color/color_sendre"
+                android:layout_marginBottom="5dp"
+                android:hint="password">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:id="@+id/passlogin"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/forgot"
+                android:textColor="@color/color_sendre"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="250dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="forgot password ?"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp"
+            android:backgroundTint="@color/color_sendre"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_above="@id/RedirectSin"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="--------- OR ---------"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="doesn't have an account ?"
+            android:textStyle="bold" />
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginBottom="0dp"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            android:text="Login"-->
+        <!--            android:textColor="@color/color_sendre"-->
+        <!--            android:textSize="20dp" />-->
+    </LinearLayout>
+    <TextView
+        android:id="@+id/RedirectSin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create New "
+        android:textSize="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/color_sendre"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border_background"/>
+
+
+
+</RelativeLayout>

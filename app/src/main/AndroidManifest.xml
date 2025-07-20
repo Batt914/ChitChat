@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/chat"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ChitChat"
+        tools:targetApi="31">
+        <activity
+            android:name=".chat_images"
+            android:exported="false" />
+        <activity
+            android:name=".send_images"
+            android:exported="false" />
+        <activity
+            android:name=".Retrive"
+            android:exported="false" />
+        <activity
+            android:name=".Home_items"
+            android:exported="false" />
+        <activity
+            android:name=".MusicBar"
+            android:exported="false" />
+        <activity
+            android:name=".login69"
+            android:exported="false" />
+        <activity
+            android:name=".SingUp"
+            android:exported="false" />
+        <activity
+            android:name=".ChatWindow"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ForgotPasword"
+            android:exported="false" />
+        <activity
+            android:name=".splast"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

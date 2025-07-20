@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:fitsSystemWindows="true"
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/Bottom_Layout"
+        />
+
+    <LinearLayout
+        android:id="@+id/Bottom_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="10dp"
+        android:elevation="10dp"
+        android:gravity="center"
+        tools:targetApi="lollipop"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/Home_Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/lavender_boder"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <ImageView
+                android:id="@+id/Home_Image"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/home2"
+                android:tint="@color/IconColor"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                android:id="@+id/Home_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Home"
+                android:textColor="@color/IconColor"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Group_Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/Group_Image"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:tint="@color/IconColor"
+                android:src="@drawable/group"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                android:id="@+id/Group_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add+..."
+                android:textColor="@color/IconColor"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Notification_Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/Notification_Image"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:tint="@color/IconColor"
+                android:src="@drawable/notification"
+                tools:ignore="UseAppTint" />
+            <TextView
+                android:id="@+id/Notification_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notifications"
+                android:visibility="gone"
+                android:textColor="@color/IconColor"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Profile_Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/Profile_Image"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:tint="@color/IconColor"
+                android:src="@drawable/profile"
+                app:shapeAppearanceOverlay="@style/roundedImageView" />
+            <TextView
+                android:id="@+id/Profile_Text"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/IconColor"
+                android:text="Profile"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
