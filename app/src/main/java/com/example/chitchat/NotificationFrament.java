@@ -17,8 +17,6 @@ import java.util.List;
 
 public class NotificationFrament extends Fragment {
     private RecyclerView recyclerView;
-    private  VideoAdapter videoAdapter;
-    private List<Vide0_item> vedioList;
 
     public NotificationFrament() {
 
@@ -34,11 +32,6 @@ public class NotificationFrament extends Fragment {
 
 
         View view = inflater.inflate(R.layout.fragment_notification_frament, container, false);
-        vedioList = genarateVedioList();
-        recyclerView = view.findViewById(R.id.notification_RecyclerView);
-        videoAdapter = new VideoAdapter(vedioList);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        recyclerView.setAdapter( videoAdapter );
 
         return view;
 
@@ -46,24 +39,6 @@ public class NotificationFrament extends Fragment {
 
     }
 
-    private List<Vide0_item> genarateVedioList() {
-        List<Vide0_item> videoItems = new ArrayList<>();
-        videoItems.add(new Vide0_item(R.drawable.family, R.drawable.chanel, "Movie trailer", "sithara_Entairtener"));
-        videoItems.add(new Vide0_item(R.drawable.frds, R.drawable.chanel, "Movie teser", "cenimas_Entairtener"));
-        videoItems.add(new Vide0_item(R.drawable.nene, R.drawable.chanel, "createv_knowlwdge", "sithara_Entairtener"));
-        videoItems.add(new Vide0_item(R.drawable.frd2, R.drawable.chanel, "Movie trailer", "sithara_Entairtener"));
-        videoItems.add(new Vide0_item(R.drawable.frds3, R.drawable.chanel, "Movie teser", "cenimas_Entairtener"));
-        videoItems.add(new Vide0_item(R.drawable.vedio_thum, R.drawable.chanel, "Movie teser", "cenimas_Entairtener"));
-        videoItems.add(new Vide0_item(R.drawable.cat, R.drawable.chanel, "createv_knowlwdge", "sithara_Entairtener"));
-        return videoItems;
-
-
-
-
-
-
-
-    }
     
 
 }

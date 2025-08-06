@@ -10,9 +10,9 @@
               <option name="connection">
                 <ConnectionSetting>
                   <option name="appId" value="com.example.chitchat" />
-                  <option name="mobileSdkAppId" value="1:664940360126:android:0ddc125919b40bd0c909ef" />
-                  <option name="projectId" value="chitchat-61615" />
-                  <option name="projectNumber" value="664940360126" />
+                  <option name="mobileSdkAppId" value="1:337227229567:android:1115a676bdc8eb5fb2924a" />
+                  <option name="projectId" value="chitchat-139c3" />
+                  <option name="projectNumber" value="337227229567" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

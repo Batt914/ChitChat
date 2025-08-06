@@ -50,8 +50,6 @@
         android:textStyle="normal|bold"
         android:layout_marginTop="20dp"/>
     <LinearLayout
-
-        android:fitsSystemWindows="true"
         android:id="@+id/sin"
         android:layout_width="match_parent"
         android:layout_height="300dp"
@@ -131,19 +129,35 @@
                 android:text="forgot password ?"/>
 
         </LinearLayout>
-
-
-        <Button
-            android:id="@+id/login"
-            android:layout_width="350dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="0dp"
-            android:backgroundTint="@color/color_sendre"
-            android:text="Login"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Button
+                android:visibility="visible"
+                android:id="@+id/login"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="0dp"
+                android:backgroundTint="@color/color_sendre"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <ProgressBar
+                android:id="@+id/prograssBar11"
+                android:visibility="gone"
+                android:indeterminateTint="@color/color_sendre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </LinearLayout>
 
     </LinearLayout>
     <LinearLayout

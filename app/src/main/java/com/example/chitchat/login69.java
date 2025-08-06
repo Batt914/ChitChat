@@ -1,10 +1,13 @@
 package com.example.chitchat;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,6 +31,7 @@ public class login69 extends AppCompatActivity {
 
     TextView cretaeNew,forgotPass;
     TextInputEditText email,pass;
+    ProgressBar progressBar;
     Button login;
     FirebaseAuth auth;
     FirebaseUser user;
@@ -49,6 +53,7 @@ public class login69 extends AppCompatActivity {
         pass=findViewById(R.id.passlogin);
         login=findViewById(R.id.login);
         forgotPass=findViewById(R.id.forgot);
+        progressBar=findViewById(R.id.prograssBar11);
 
         auth=FirebaseAuth.getInstance();
         user=auth.getCurrentUser();
@@ -68,14 +73,21 @@ public class login69 extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 String e=email.getText().toString();
                 String p=pass.getText().toString();
                 if (e.isEmpty() || p.isEmpty()){
                     Toast.makeText(login69.this,"enter valid informatin",Toast.LENGTH_SHORT).show();
                 }else {
+                    InputMethodManager imm = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+                    progressBar.setVisibility(View.VISIBLE);
+                    login.setVisibility(View.GONE);
                     auth.signInWithEmailAndPassword(e,p).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
+                            progressBar.setVisibility(View.GONE);
+                            login.setVisibility(View.VISIBLE);
                             if (task.isSuccessful()){
                                 Intent intent=new Intent(login69.this,MainActivity.class);
                                 startActivity(intent);

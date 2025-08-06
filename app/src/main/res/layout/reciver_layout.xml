@@ -8,24 +8,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="32.50dp"
-            android:layout_height="32.50dp"
-            android:src="@drawable/profile11"
-            android:id="@+id/reciver_img"
-            android:scaleType="centerCrop"
-            app:shapeAppearanceOverlay="@style/roundedImageView"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:layout_marginTop="13dp"
-            android:layout_marginLeft="5dp"/>
             <androidx.cardview.widget.CardView
-                android:backgroundTint="@color/reciverChat"
+                android:backgroundTint="@color/sender_side"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="25dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="5dp"
                 app:cardCornerRadius="25dp"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="10dp">
                 <TextView
                     android:id="@+id/recivermsg"
                     android:layout_width="wrap_content"
@@ -33,7 +24,7 @@
                     android:layout_margin="10dp"
                     android:text="Online_vikky "
                     android:textStyle="normal"
-                    android:textColor="@color/white"
+                    android:textColor="@color/background"
                     android:textSize="17dp"/>
 
 

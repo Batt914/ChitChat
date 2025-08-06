@@ -1,15 +1,18 @@
 package com.example.chitchat;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -51,6 +54,7 @@ public class SingUp extends AppCompatActivity {
     Button sing;
     FirebaseDatabase database;
     FirebaseAuth auth;
+    ProgressBar progressBar;
     DatabaseReference reference,databaseReference;
     FirebaseStorage storage;
     StorageReference storageReference;
@@ -73,10 +77,9 @@ public class SingUp extends AppCompatActivity {
         email1=findViewById(R.id.re_email);
         pass1=findViewById(R.id.re_pass);
         Cpass1=findViewById(R.id.re_repass);
-
         sing=findViewById(R.id.re_signBtn);
         login=findViewById(R.id.RedirectLogin);
-
+        progressBar=findViewById(R.id.prograssBar1122);
 
 
 
@@ -106,6 +109,10 @@ public class SingUp extends AppCompatActivity {
                 } if (!pass.trim().equals(repass.trim())) {
                     Toast.makeText(SingUp.this,"pass not equal repass",Toast.LENGTH_SHORT).show();
                 }if(imageURI !=null) {
+                    InputMethodManager imm = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+                    progressBar.setVisibility(View.VISIBLE);
+                    sing.setVisibility(View.GONE);
                     auth.createUserWithEmailAndPassword(email,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {

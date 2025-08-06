@@ -66,7 +66,7 @@ public class ProfileFragment extends Fragment {
         pro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getActivity(),send_images.class);
+                Intent intent=new Intent(getActivity(),SpotifyIntigration.class);
                 startActivity(intent);
             }
         });

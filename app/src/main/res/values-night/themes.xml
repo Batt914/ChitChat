@@ -23,5 +23,14 @@
 
     <color name="homebackground" tools:ignore="MissingDefaultResource">#101010</color>
 
-    <drawable name="wallpaper">@drawable/night_mood1</drawable>
+    <drawable name="wallpaper">@drawable/black</drawable>
+    <drawable name="pause">@drawable/pause_dark</drawable>
+    <drawable name="play11">@drawable/paly_dark</drawable>
+    <color name="sender_side">#1affff</color>
+    <color name="reciver_side" tools:ignore="MissingDefaultResource">@color/color_sendre</color>
+    <color name="sender22">@color/color_sendre</color>
+
+    <drawable name="forward">@drawable/forward_night</drawable>
+    <drawable name="backward" tools:ignore="MissingDefaultResource">@drawable/previous_dark</drawable>
+
 </resources>

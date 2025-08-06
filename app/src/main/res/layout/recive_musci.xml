@@ -1,0 +1,167 @@
+<RelativeLayout
+    android:id="@+id/sendImagesChat"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/images"
+            android:layout_width="350dp"
+            android:elevation="10dp"
+            android:backgroundTint="@color/sender_side"
+            android:layout_height="185dp"
+            app:cardCornerRadius="25dp"
+            android:layout_marginBottom="5dp"
+            tools:targetApi="34">
+            <androidx.cardview.widget.CardView
+                android:backgroundTint="#2c3f38"
+                android:layout_margin="2dp"
+                app:cardCornerRadius="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/bgSongImage22"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10.9dp"
+                        android:layout_marginTop="69.2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/songname22"
+                            android:textColor="@color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/artistName22"
+                            android:textColor="@color/liteWhite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <SeekBar
+                        android:layout_marginTop="110dp"
+                        android:progressTint="@color/white"
+                        android:thumbTint="@color/white"
+                        android:layout_marginBottom="8dp"
+                        android:id="@+id/seekbarchat22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                    <LinearLayout
+                        android:layout_marginTop="145dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_below="@+id/seekbarchat"
+                            android:layout_above="@id/directionalMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/songPosition123"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="00:00"/>
+                            <TextView
+                                android:id="@+id/sondDuaretion122"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00:00"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/directionalMenu"
+                        android:layout_marginBottom="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <ImageButton
+                            android:id="@+id/play_bv22"
+                            android:tint="@color/white"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/previous_dark"
+                            tools:ignore="UseAppTint" />
+                        <ImageView
+                            android:id="@+id/play_bt22"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/play22"
+                            app:tint="@color/white" />
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/pause_bt"
+                            android:layout_width="80dp"
+                            android:backgroundTint="@color/IconColor"
+                            android:layout_height="80dp"
+                            android:src="@drawable/pause"
+                            app:tint="@color/IconColor" />
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/PauseButton"
+                            android:layout_width="80dp"
+                            android:backgroundTint="@color/IconColor"
+                            android:layout_height="80dp"
+                            android:src="@drawable/pause"
+                            app:tint="@color/IconColor" />
+
+
+
+                        <ImageButton
+                            android:id="@+id/playfv22"
+                            android:tint="@color/white"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="30dp"
+                            android:background="@drawable/forward_night"
+                            tools:ignore="UseAppTint" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

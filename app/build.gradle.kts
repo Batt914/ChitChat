@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.google.gms.google.services)
+    alias(libs.plugins.kotlin.android)
 }
 
 android {
@@ -31,6 +32,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+    kotlinOptions {
+        jvmTarget = "11"
+    }
 }
 
 dependencies {
@@ -48,6 +52,16 @@ dependencies {
     implementation(libs.googleid)
     implementation(libs.firebase.analytics)
     implementation(libs.firebase.messaging)
+//    implementation(files("../spotify-auth-release-2.1.0.aar"))
+//    implementation(files("../spotify-auth-store-release-2.1.0.aar"))
+    implementation(files("../spotify-app-remote-release-0.8.0.aar"))
+    implementation ("com.spotify.android:auth:1.2.3")
+    implementation ("com.spotify.android:auth:1.2.5")
+    // RetroFitting
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    implementation(libs.core.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
@@ -55,6 +69,13 @@ dependencies {
     implementation ("com.github.bumptech.glide:glide:4.11.0")
     implementation ("com.squareup.picasso:picasso:2.8")
     implementation ("com.github.dhaval2404:imagepicker:2.1")
+    implementation("com.google.android.exoplayer:exoplayer:2.17.1")
+
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
+    implementation ("androidx.navigation:navigation-fragment-ktx:2.5.3")
+    implementation ("androidx.navigation:navigation-ui-ktx:2.5.3")
+
+
 
 
 }

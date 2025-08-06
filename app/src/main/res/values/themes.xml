@@ -21,5 +21,15 @@
     <color name="homebackground" tools:ignore="MissingDefaultResource">#EDEDEB</color>
 
     <drawable name="wallpaper">@drawable/light_mood</drawable>
+    <drawable name="pause">@drawable/pause_light</drawable>
+    <drawable name="play11">@drawable/play_light</drawable>
+
+    <color name="sender_side">@color/color_sendre</color>
+    <color name="reciver_side" tools:ignore="MissingDefaultResource">#1affff</color>
+    <color name="sender22">@color/white</color>
+
+
+    <drawable name="forward">@drawable/forwars_light</drawable>
+    <drawable name="backward" tools:ignore="MissingDefaultResource">@drawable/previous_light</drawable>
 
 </resources>

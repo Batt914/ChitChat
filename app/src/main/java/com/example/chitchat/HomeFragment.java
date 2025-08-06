@@ -40,7 +40,6 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-        useritems=view.findViewById(R.id.User_items);
         recyclerView=view.findViewById(R.id.Home_RecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setHasFixedSize(true);

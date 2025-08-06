@@ -17,9 +17,12 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven(url = "https://jitpack.io")
+        maven(url = "https://github.com/square/okhttp/releases")
+        maven(url = "https://plugins.gradle.org/m2/")
+        maven(url = "https://dl.google.com/dl/android/maven2/")
+
     }
 }
 
 rootProject.name = "ChitChat"
 include(":app")
- 

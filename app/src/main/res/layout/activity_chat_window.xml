@@ -11,10 +11,10 @@
     android:layout_height="match_parent"
     tools:context=".ChatWindow">
     <LinearLayout
-        android:padding="5dp"
         android:id="@+id/ll1"
+        android:padding="2dp"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:orientation="horizontal">
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/h_Image1111"
