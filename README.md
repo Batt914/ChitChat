@@ -4,3 +4,5 @@
 We respect **Spotify’s Developer Terms of Service** and user privacy at all times.
 
 ![image alt](https://github.com/Batt914/ChitChat/blob/master/Screenshot%202025-08-13%20220308.png?raw=true)
+
+![image_alt](https://github.com/Batt914/ChitChat/blob/master/Screenshot%202025-08-15%20071942.png?raw=true)
