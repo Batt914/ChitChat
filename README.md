@@ -5,4 +5,12 @@ We respect **Spotify’s Developer Terms of Service** and user privacy at all ti
 
 ![image alt](https://github.com/Batt914/ChitChat/blob/master/Screenshot%202025-08-13%20220308.png?raw=true)
 
+
+The app maintains a dynamic list of the user's last 25 Spotify songs, combining:
+- 🎧 Recent 10 songs fetched on initial connection
+- 🔄 Real-time updates as new songs are playe
+- Songs are stored temporarily—not downloadable or permanently saved
+- This ensures a lightweight, privacy-respecting experience while keeping the chatroom musically alive
+- If the list exceeds 25 songs, the oldest track is automatically removed
+
 ![image_alt](https://github.com/Batt914/ChitChat/blob/master/Screenshot%202025-08-15%20071942.png?raw=true)
