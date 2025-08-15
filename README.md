@@ -14,3 +14,8 @@ The app maintains a dynamic list of the user's last 25 Spotify songs, combining:
 - If the list exceeds 25 songs, the oldest track is automatically removed
 
 ![image_alt](https://github.com/Batt914/ChitChat/blob/master/Screenshot%202025-08-15%20071942.png?raw=true)
+
+🎉 Chatroom with Embedded Spotify Playlist Sharing
+Welcome to a chatroom designed for celebrations, events, and spontaneous music moments—from faction gatherings to Bonalu Jatara and beyond.
+
+![image_alt](https://github.com/Batt914/ChitChat/blob/master/Screenshot%202025-08-15%20071942.png?raw=true)
