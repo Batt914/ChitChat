@@ -1,5 +1,8 @@
 # 🎵 ChitChat – Chat Application with Spotify Integration
 
+Add a little bit of body text.mp4
+Demo video { https://drive.google.com/file/d/1zr0GH65EK0AcvTNjDxL6-9GL642xUm1Y/view?usp=sharing } just 2min and 12sec of this video was clearly explain of thuis etair project 
+
 **ChitChat** is a modern Android chat application built in **Java** with **Spotify integration**, allowing users to share and play their Spotify playlists and songs directly inside the chat window — **no external browser or app redirection required**.  
 We respect **Spotify’s Developer Terms of Service** and user privacy at all times.
 
